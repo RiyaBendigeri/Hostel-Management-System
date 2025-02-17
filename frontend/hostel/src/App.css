@@ -1,0 +1,454 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+.home {
+  text-align: center;
+}
+
+.homeheader {
+  background: linear-gradient(135deg, #6a5acd, #8a2be2);
+  padding: 40px 20px;
+  color: #ffffff;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.home-header-overlay {
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-block;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: #cfdef3;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.welcome-text {
+  font-size: 1.2em;
+  margin-top: 10px;
+  font-weight: 300;
+  color: #e0e0e0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.features-title {
+  font-size: 1.8em;
+  color: #7851a9;
+  margin: 40px 0 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 320px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 10px;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.action-button {
+  font-size: medium;
+  margin: 0 10px;
+  width: 180px;
+  height: 45px;
+  background-color: #007bff; /* Primary Blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.action-button:hover {
+  background-color: #0056b3; /* Darker shade of blue */
+  transform: scale(1.05);
+}
+
+.footer {
+  margin-top: 50px;
+  color: #7851a9;
+  font-size: small;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+h3 {
+  font-size: 1.1em;
+  margin: 10px 0;
+  color: #7851a9;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.button-container {
+  display: flex; /* Arrange child elements horizontally */
+  justify-content: center; /* Center them horizontally */
+  margin-top: 20px;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  margin: 0 20px; /* Add space between buttons */
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-radius: 5px;
+  width: 120px; /* Adjusted width for better alignment */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  top: 45px; /* Position dropdown below the button */
+  left: 0; /* Align dropdown with button */
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #7851a9;
+}
+
+.dropdown-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.home {
+  text-align: center;
+}
+
+.Adminregheader {
+  background: linear-gradient(135deg, #6a5acd, #8a2be2);
+  padding: 40px 20px;
+  color: #ffffff;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  justify-content: flex-end;
+  display: block;
+}
+
+.Adminreg-header-overlay {
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-block;
+  margin-left: 35%;
+  text-align: center;
+}
+
+/* Updated Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  margin-right: 20px;
+}
+
+/* Updated Color for Navbar Links */
+.navbar-item a {
+  color: white; /* Text color white */
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar-item a:hover {
+  text-decoration: underline;
+  color: #007bff; /* Optional hover effect */
+}
+
+.navbar-item button {
+  background-color: transparent; /* No background color */
+  color: white; /* Text color white */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.navbar-item button:hover {
+  text-decoration: underline;
+  color: #007bff; /* Optional hover text color */
+}
+
+/* Complaints Table Styles */
+.complaints-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.complaints-table th,
+.complaints-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.complaints-table th {
+  background-color: #f4f4f4;
+}
+
+.complaints-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.complaints-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Students Table Styles */
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.students-table th,
+.students-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.students-table th {
+  background-color: #f4f4f4;
+}
+
+.students-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.students-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button Styles */
+button {
+  color: black; /* Text color for "Mark as Seen" button */
+  background-color: transparent; /* No background color */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade of blue when hovered */
+  color: white; /* White text color on hover */
+}
+.background-video {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh; 
+  object-fit: cover; 
+ z-index:-1;
+}
+.home-container {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  justify-content: flex-start;
+  position: relative;
+  z-index: 1; 
+}
+
+.home-header {
+  margin-top: 50px; 
+}
+
+
+
+
+
+.home-nav-button {
+  margin: 0 15px;
+  padding: 12px 24px;
+  border: 2px solid rgba(255, 255, 255, 0.8); 
+  border-radius: 8px;
+  background-color: rgba(98, 0, 234, 0.5);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.3s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: bounceIn 0.5s forwards;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top:75px;
+}
+
+.home-nav-button:hover {
+  background-color: rgba(85, 3, 200, 0.7);
+  
+}
+
+.action-button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.newhome{
+  
+  margin-top: 150px;
+  margin-right: 50px;
+}
+.newtitle{
+  
+  height:40px;
+ 
+}
+.home-footer {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Cormorant Garamond', serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 90px;
+ /* background-color: rgba(0, 0, 0, 0.7);  Darker background for contrast */
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-container h2 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: larger;
+  font-weight: bolder;
+   /* Slightly lighter for emphasis */
+}
+
+.home-social-media {
+  margin-bottom: 15px;
+}
+
+.home-social-media a {
+  color: white;
+  font-weight: bolder;
+  
+  margin: 0 10px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.home-social-media a:hover {
+  color: #ffcc00; /* Highlight on hover */
+}
+
+.footer-quote {
+  font-size: 14px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: larger;
+  font-weight: bolder;
+  margin-top:10px;
+
+}
+
